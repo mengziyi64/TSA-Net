@@ -1,0 +1,28 @@
+---
+# === Configure Main function === #
+category_train: ./Data/Training_truth/
+category_valid: ./Data/Valid_truth/
+category_test: ./Data/Testing_data/  
+category_mask: ./Data/ 
+model_name: Decoder
+result_dir: Result
+result_model: Model-Config
+result_data: Testing-Result
+model_filename: #Result/Model-Config/TSA-Model/models-0.0349-95445
+GPU: 0
+
+# === Configure Model Handler === #
+# Data Assignment
+num_width: 256
+num_height: 256
+num_channel: 28
+batch_size: 10
+# Model training Controler
+epochs: 300
+patience: 400
+learning_rate: 0.004
+lr_decay: 0.6
+lr_decay_epoch: 25
+lr_decay_interval: 25 
+loss_func: RMSE
+max_grad_norm: 5.0

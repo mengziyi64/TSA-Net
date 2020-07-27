@@ -1,0 +1,24 @@
+GPU: 0
+batch_size: 10
+category_mask: ./Data/
+category_test: ./Data/Testing_data/
+category_train: ./Data/Training_truth/
+category_valid: ./Data/Valid_truth/
+epoch: 188
+epochs: 300
+learning_rate: 0.004
+log_dir: Result/Model-Config/TSA-Model/
+loss_func: RMSE
+lr_decay: 0.6
+lr_decay_epoch: 3
+lr_decay_interval: 25
+max_grad_norm: 5.0
+model_filename: Result/Model-Config/TSA-Model/models-0.0349-95445
+model_name: Decoder
+num_channel: 28
+num_height: 256
+num_width: 256
+result_data: Testing-Result
+result_dir: Result
+result_model: Model-Config
+
