@@ -1,8 +1,7 @@
 # TSA-Net for CASSI
-This repository contains the codes for paper **End-to-End Low Cost Compressive Spectral Imaging with Spatial-Spectral Self-Attention** (***ECCV (2020)***) by [Ziyi Meng*](https://github.com/mengziyi64), [Jiawei Ma*](https://github.com/Phoenix-V), [Xin Yuan](https://www.bell-labs.com/usr/x.yuan) (*Equal contributions). [[pdf]]()  
-We provide simulation data and real data of our system. You can download them by the following link.  
+This repository contains the codes for paper **End-to-End Low Cost Compressive Spectral Imaging with Spatial-Spectral Self-Attention** (***ECCV (2020)***) by [Ziyi Meng*](https://github.com/mengziyi64), [Jiawei Ma*](https://github.com/Phoenix-V), [Xin Yuan](https://www.bell-labs.com/usr/x.yuan) (*Equal contributions).
 [[Simu data (Google Drive)]](https://drive.google.com/drive/folders/1BNwkGHyVO-qByXj69aCf4SWfEsOB61J-?usp=sharing), [[Simu data (One Drive)]](https://1drv.ms/u/s!Au_cHqZBKiu2gYFDwE-7z1fzeWCRDA?e=ofvwrD), [[Simu data (Baidu Drive pw:aw5u)]](https://pan.baidu.com/s/1kWeH0IsHdj7Pbdd5oCJqTA)  
-[[Real data (Google Drive)]](), [[Real data (One Drive)]](), [[Real data (Baidu Drive pw:)]]()
+Note: Real data will be shared a couple days later.
 
 
 ## Overviewer
