@@ -1,0 +1,29 @@
+---
+# === Configure Main function === #
+category_train: ./Data/Training_truth/
+category_valid: ./Data/Valid_truth/
+category_test: ./Data/Testing_real_data/  
+category_mask: ./Data/   
+model_name: Decoder
+result_dir: Result
+result_model: Model-Config
+result_data: Testing-Result
+model_filename: 
+GPU: 0
+
+# === Configure Model Handler === #
+# Data Assignment
+num_width: 660
+num_height: 660
+num_channel: 28
+batch_size: 5
+# Model training Controler
+epochs: 300
+learning_rate: 0.001
+lr_decay: 0.8
+lr_decay_epoch: 10
+lr_decay_interval: 10 
+loss_func: RMSE
+max_grad_norm: 5.0
+
+
