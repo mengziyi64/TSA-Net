@@ -21,7 +21,7 @@ Fig. 2 (a) Spatial-Spectral Self-Attention (TSA) for one V feature (head). The s
 TSA-Net Architecture. Each convolution layer adopts a 3 x 3 operator with stride 1 and outputs O-channel cube. The size of pooling and upsampling is P and T.
 
 <p align="center">
-<img src="Result/Images/Media1.gif" width="800">
+<img src="Images/Media1.gif" width="800">
 </p>
 Fig. 3 A reconstructed hyperspectral video.
 
