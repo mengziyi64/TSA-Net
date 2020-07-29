@@ -35,8 +35,8 @@ git clone https://github.com/mengziyi64/TSA-Net
 or download the [zip file](https://github.com/mengziyi64/TSA-Net/archive/master.zip) manually.
 
 3. Download the model file  
-Simulation model(0.97 GB): via [Google Drive](https://drive.google.com/drive/folders/1FrtEndhzaJoFxvnVT7tKW-Rc1RtOxgcp?usp=sharing) or [One Drive](https://1drv.ms/u/s!Au_cHqZBKiu2gYFBE6Rvvgu0JtayNw?e=oQceKJ) or [Baidu Drive (pw:cskg)](https://pan.baidu.com/s/1kah_U8VP8rskhn710DoV3g) and put the file into path 'TSA_Net_simulation/Result/Model-Condig/TSA-Model/'.  
-Real data model(1.30 GB): via [Google Drive](https://drive.google.com/drive/folders/1IG_45bmiqk1hHgD0549xyO-Zrgy0eASy?usp=sharing) or [One Drive](https://1drv.ms/u/s!Au_cHqZBKiu2gYFUWgiG5qGP48Fh_w?e=hWWyd8) or [Baidu Drive (pw:iubr)](https://pan.baidu.com/s/1iQgcnDQpO7mU2U00WRBu7g) and put the file into path 'TSA_Net_realdata/Result/Model-Condig/TSA-Model-Real/'.
+Simulation model(0.97 GB): via [Google Drive](https://drive.google.com/drive/folders/1FrtEndhzaJoFxvnVT7tKW-Rc1RtOxgcp?usp=sharing) or [One Drive](https://1drv.ms/u/s!Au_cHqZBKiu2gYFBE6Rvvgu0JtayNw?e=oQceKJ) or [Baidu Drive (pw:cskg)](https://pan.baidu.com/s/1kah_U8VP8rskhn710DoV3g) and put the file into path 'TSA_Net_simulation/Result/Model-Config/TSA-Model/'.  
+Real data model(1.30 GB): via [Google Drive](https://drive.google.com/drive/folders/1IG_45bmiqk1hHgD0549xyO-Zrgy0eASy?usp=sharing) or [One Drive](https://1drv.ms/u/s!Au_cHqZBKiu2gYFUWgiG5qGP48Fh_w?e=hWWyd8) or [Baidu Drive (pw:iubr)](https://pan.baidu.com/s/1iQgcnDQpO7mU2U00WRBu7g) and put the file into path 'TSA_Net_realdata/Result/Model-Config/TSA-Model-Real/'.
 
 ### Testing 
 1. Testing on simulation data   
@@ -56,6 +56,6 @@ Run **TSA_Net_realdata/test.py** to reconstruct 5 real datasets. The results wil
 
 
 ## Contact
-Ziyi Meng, Beijing University of Posts and Telecommunications, Email: mengziyi@bupt.edu.cn, zm233@njit.edu
-Jiawei Ma, Columbia University, Email: jiawei.m@columbia.edu
-Xin Yuan, Bell Labs, Email: xyuan@bell-labs.com
+Ziyi Meng, Beijing University of Posts and Telecommunications, Email: mengziyi@bupt.edu.cn, zm233@njit.edu  
+Jiawei Ma, Columbia University, Email: jiawei.m@columbia.edu  
+Xin Yuan, Bell Labs, Email: xyuan@bell-labs.com  
