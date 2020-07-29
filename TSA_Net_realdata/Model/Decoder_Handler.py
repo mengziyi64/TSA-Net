@@ -119,7 +119,7 @@ class Decoder_Handler(Basement_Handler):
             
             # Training 
             for trained_batch in range(0,self.train_size):
-                (measure_train, mask_train, ground_train) = self.gen_train.next()
+                (measure_train, mask_train, ground_train) = self.gen_train.__next__()
                 feed_dict_train = {self.meas_sample: measure_train, 
                                    self.sense_matrix: mask_train,
                                    self.truth: ground_train}
@@ -138,7 +138,7 @@ class Decoder_Handler(Basement_Handler):
             # Validation 
             list_truth,list_pred = [],[]
             for valided_batch in range(0,self.valid_size):
-                (measure_valid,mask_valid,ground_valid) = self.gen_valid.next()
+                (measure_valid,mask_valid,ground_valid) = self.gen_valid.__next__()
                 feed_dict_valid = {self.meas_sample: measure_valid,
                                    self.sense_matrix: mask_valid,
                                    self.truth: ground_valid}
@@ -183,7 +183,7 @@ class Decoder_Handler(Basement_Handler):
                         'loss':        self.Decoder_test.loss}
         
         for tested_batch in range(self.test_size):
-            (measure_test,mask_train,ground_test) = self.gen_test.next()
+            (measure_test,mask_train,ground_test) = self.gen_test.__next__()
             feed_dict_test = {self.meas_sample: measure_test,self.sense_matrix: mask_train,self.truth: ground_test}
             test_output = self.sess.run(test_fetches,feed_dict=feed_dict_test)
         ## save recon
