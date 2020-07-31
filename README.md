@@ -26,7 +26,7 @@ TSA-Net Architecture. Each convolution layer adopts a 3 x 3 operator with stride
 Fig. 3 A reconstructed hyperspectral video.
 
 ## Usage
-### Download the SMEM repository and model file
+### Download the TSA-Net repository and model file
 0. Requirements are Python 3 and Tensorflow 1.13.
 1. Download this repository via git
 ```
