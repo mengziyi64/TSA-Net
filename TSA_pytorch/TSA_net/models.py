@@ -52,12 +52,12 @@ class TSA_net(nn.Module):
         self.down4 = Down(512, 1024 // factor)
         self.up1 = Up(1024, 512 // factor, bilinear)
         self.up2 = Up(512, 256 // factor, bilinear, flag_res)
-        self.transfor3 = TSA_Transform((64,64),256,256,8,(64,80),[0,0])
+        self.transform3 = TSA_Transform((64,64),256,256,8,(64,80),[0,0])
         self.up3 = Up(256, 128 // factor, bilinear, flag_res)
         self.transform2 = TSA_Transform((128,128),128,128,8,(64,40),[1,0])
         self.up4 = Up(128, 64, bilinear, flag_res)
         self.transform1 = TSA_Transform((256,256),64,28,8,(48,30),[1,1],True)
-        self.outc = OutConv(64, n_classes)
+        self.outc = OutConv(28, n_classes)
 
     def forward(self, x):
         x1 = self.inc(x)
@@ -67,8 +67,10 @@ class TSA_net(nn.Module):
         x5 = self.down4(x4)
         x = self.up1(x5, x4)
         x = self.up2(x, x3)
+        x,_ = self.transform3(x)
         x = self.up3(x, x2)
+        x,_ = self.transform2(x)
         x = self.up4(x, x1)
+        x,_ = self.transform1(x)
         logits = self.outc(x)
         return logits
-
