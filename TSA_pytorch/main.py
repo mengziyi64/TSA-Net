@@ -17,9 +17,9 @@ torch.backends.cudnn.benchmark = True
 if not torch.cuda.is_available():
     raise Exception('NO GPU!')
 
-data_path = "../Data/cave_1024_28/"  
-mask_path = "../Data"
-test_path = "../Data/Kaist_test/" 
+data_path = "./Data/training/"  
+mask_path = "./Data"
+test_path = "./Data/testing/" 
 
 batch_size = 5
 last_train = 0                        # for finetune
