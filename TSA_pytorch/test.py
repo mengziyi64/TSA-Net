@@ -59,10 +59,8 @@ def main():
         os.makedirs(result_path)
     (pred, truth, psnr_all, ssim_all, psnr_mean, ssim_mean) = test(epoch, logger)
     
-    for epoch in range(last_train + 1, last_train + max_epoch + 1):
-        (pred, truth, psnr_all, ssim_all, psnr_mean, ssim_mean) = test(epoch, logger)
-        name = result_path + '/' + 'Test_{}_{:.2f}_{:.3f}'.format(last_train, psnr_max, ssim_mean) + '.mat'
-        scio.savemat(name, {'truth':truth, 'pred': pred, 'psnr_list':psnr_all, 'ssim_list':ssim_all})
+    name = result_path + '/' + 'Test_{}_{:.2f}_{:.3f}'.format(last_train, psnr_max, ssim_mean) + '.mat'
+    scio.savemat(name, {'truth':truth, 'pred': pred, 'psnr_list':psnr_all, 'ssim_list':ssim_all})
         
 if __name__ == '__main__':
     main()    
