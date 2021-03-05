@@ -101,7 +101,6 @@ def shuffle_crop(train_data, batch_size):
     gt_batch = torch.from_numpy(np.transpose(processed_data, (0, 3, 1, 2)))
     return gt_batch
 
-return PhiTy
 
 def gen_meas_torch(data_batch, mask3d_batch, is_training=True):
     nC = data_batch.shape[1]
