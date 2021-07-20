@@ -18,8 +18,8 @@ if not torch.cuda.is_available():
 
 mask_path = "../Data"
 test_path = "../Data/Kaist_test/" 
-last_train = 0                        
-model_save_filename = ''                 
+last_train = 80                        
+model_save_filename = 'model'                 
 mask3d_batch = generate_masks(mask_path, batch_size)
 test_data = LoadTest(test_path)
 model = TSA_Net(28, 28).cuda()
@@ -27,7 +27,7 @@ model = TSA_Net(28, 28).cuda()
 if last_train != 0:
     model = torch.load('./model/' + model_save_filename + '/model_epoch_{}.pth'.format(last_train))    
 
-def test(epoch, logger):
+def test(epoch):
     psnr_list, ssim_list = [], []
     test_gt = test_data.cuda().float()
     test_PhiTy = gen_meas_torch(test_gt, mask3d_batch, is_training = False)
@@ -57,9 +57,9 @@ def main():
     result_path = 'recon' + '/' + date_time
     if not os.path.exists(result_path):
         os.makedirs(result_path)
-    (pred, truth, psnr_all, ssim_all, psnr_mean, ssim_mean) = test(epoch, logger)
+    (pred, truth, psnr_all, ssim_all, psnr_mean, ssim_mean) = test(last_train)
     
-    name = result_path + '/' + 'Test_{}_{:.2f}_{:.3f}'.format(last_train, psnr_max, ssim_mean) + '.mat'
+    name = result_path + '/' + 'Test_{}_{:.2f}_{:.3f}'.format(last_train, psnr_mean, ssim_mean) + '.mat'
     scio.savemat(name, {'truth':truth, 'pred': pred, 'psnr_list':psnr_all, 'ssim_list':ssim_all})
         
 if __name__ == '__main__':
