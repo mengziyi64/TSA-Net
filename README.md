@@ -61,6 +61,6 @@ Run **TSA_Net_realdata/test.py** to reconstruct 5 real datasets. The results wil
 
 
 ## Contact
-Ziyi Meng, Beijing University of Posts and Telecommunications, Email: mengziyi@bupt.edu.cn, zm233@njit.edu  
+Ziyi Meng, Beijing University of Posts and Telecommunications, Email: mengziyi@bupt.cn
 Jiawei Ma, Columbia University, Email: jiawei.m@columbia.edu  
 Xin Yuan, Bell Labs, Email: xyuan@bell-labs.com  
