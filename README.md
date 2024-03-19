@@ -1,8 +1,8 @@
 # TSA-Net for CASSI
 This repository contains the codes for paper **End-to-End Low Cost Compressive Spectral Imaging with Spatial-Spectral Self-Attention** (***ECCV (2020)***) by [Ziyi Meng*](https://github.com/mengziyi64), [Jiawei Ma*](https://github.com/Phoenix-V), [Xin Yuan](https://www.bell-labs.com/usr/x.yuan) (*Equal contributions). [[pdf]](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123680188.pdf)  
 We provide simulation data and real data of our system. You can download them by the following links.  
-[[Simu data (Google Drive)]](https://drive.google.com/drive/folders/1BNwkGHyVO-qByXj69aCf4SWfEsOB61J-?usp=sharing), [[Simu data (One Drive)]](https://1drv.ms/u/s!Au_cHqZBKiu2gYFDwE-7z1fzeWCRDA?e=ofvwrD), [[Simu data (Baidu Drive pw:aw5u)]](https://pan.baidu.com/s/1kWeH0IsHdj7Pbdd5oCJqTA)  
-[[Real data (Google Drive)]](https://drive.google.com/drive/folders/1A3529q8G5TFg1LHaPTHp3-gyjOIbn6Ki?usp=sharing), [[Real data (One Drive)]](https://1drv.ms/u/s!Au_cHqZBKiu2gYFTpCwLdTi_eSw6ww?e=uiEToT), [[Real data (Baidu Drive pw:8n9x)]](https://pan.baidu.com/s/1k0khhPytcbKTb0G5NsaFCw) 
+[[Simu data (Google Drive)]](https://drive.google.com/drive/folders/1BNwkGHyVO-qByXj69aCf4SWfEsOB61J-?usp=sharing), [[Simu data (One Drive)]](https://1drv.ms/u/s!Au_cHqZBKiu2gYFDwE-7z1fzeWCRDA?e=ofvwrD), [[Simu data (Baidu Drive pw:kwpn)]](https://pan.baidu.com/s/1BR2rsb56-_sDqIHBETewgw?pwd=kwpn)  
+[[Real data (Google Drive)]](https://drive.google.com/drive/folders/1A3529q8G5TFg1LHaPTHp3-gyjOIbn6Ki?usp=sharing), [[Real data (One Drive)]](https://1drv.ms/u/s!Au_cHqZBKiu2gYFTpCwLdTi_eSw6ww?e=uiEToT), [[Real data (Baidu Drive pw:j1ii)]](https://pan.baidu.com/s/1hrE0TJL846rMUOJU_FVj6Q?pwd=j1ii) 
 
 ### New 
 TSA-Net pytorch version is available now. Please find 'TSA_pytorch' file. This code is only for simulation data.
