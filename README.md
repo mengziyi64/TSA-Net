@@ -8,7 +8,7 @@ We provide simulation data and real data of our system. You can download them by
 TSA-Net pytorch version is available now. Please find 'TSA_pytorch' file. This code is only for simulation data.
 This pytorch model is slightly different from the version in paper, but simpler and more computationally efficient, and achieves similar results.
 The pretrained model can be downloaded by the following links.  [[TSA_pytorch_model (One Drive)]](https://bupteducn-my.sharepoint.com/:f:/g/personal/mengziyi_bupt_edu_cn/EvoQNX5cWq1BoYEbQ_4Am2EBU_sGfGdZUPO_Cfy48M4_Zw?e=KbwuBU), [[TSA_pytorch_model (Baidu Drive pw:dba4)]](https://pan.baidu.com/s/1VcPfi5v5ESIs4BoxZsRIzA)  
-Moreover, the training data can be downloaded by [[Training data (One Drive)]](https://bupteducn-my.sharepoint.com/:f:/g/personal/mengziyi_bupt_edu_cn/EmNAsycFKNNNgHfV9Kib4osB7OD4OSu-Gu6Qnyy5PweG0A?e=5NrM6S)
+Moreover, the training data can be downloaded by [[Training data (One Drive)]](https://bupteducn-my.sharepoint.com/:f:/g/personal/mengziyi_bupt_edu_cn/EmNAsycFKNNNgHfV9Kib4osB7OD4OSu-Gu6Qnyy5PweG0A?e=5NrM6S), [[Training data (Baidu Drive pw:l29y)]](https://pan.baidu.com/s/1xj7gNxVKQfrSloFf-TXJSA?pwd=l29y)
 
 ## Overviewer
 Coded aperture snapshot spectral imaging ([CASSI](https://www.osapublishing.org/ao/abstract.cfm?uri=ao-47-10-B44)) is an effective tool to capture real-world 3D hyperspectral images. We have proposed a Spatial-Spectral Self-Attention module to jointly model the spatial and spectral correlation in an order-independent manner, which is incorporated in an encoder-decoder network to achieve high quality reconstruction for CASSI.
